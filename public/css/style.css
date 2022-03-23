@@ -257,6 +257,7 @@ footer{
     }
 
     .main__disposicion{
+        display: flex;
         flex-direction: column;
         justify-content: center;
         padding-top:  2rem;
