@@ -128,7 +128,7 @@ h2{
     font-size: 3.4em;
     padding: .5rem;
     margin: 20px;
-    background-color:rgb(240, 196, 181);
+    background-color:rgb(241, 177, 156);
     animation: explosive__move infinite ease-out 7s;
     
 }
@@ -142,7 +142,7 @@ h2{
     font-size: 2em;
     padding: 1rem;
     margin: 20px;
-    background-color: rgb(240, 196, 181);
+    background-color: rgb(241, 177, 156);
     animation: explosive__move infinite ease-in-out 7s;
     
 }
@@ -232,18 +232,20 @@ footer{
     color: grey;
     font-weight: 2em;
     font-size: 2em;
-    
+    padding-right: 1em;
 }
 
 @media screen and (max-width: 768px) {
 
     .logo{
-        justify-content: center;
+        display: flex;
+        justify-content:center;
+        justify-items:flex-start;
     }
     
     header{
         padding: 2em 0;
-        position:absolute;
+        /*position:absolute;*/
     }
 
     header .navbar{
@@ -259,15 +261,22 @@ footer{
     .main__disposicion{
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        padding-top:  2rem;
+        justify-items: center;
+        margin-top:  2rem;
+    }
+
+    .main__disposicion__h2{
+        margin-top:  2rem;
     }
 
 
-    footer{
-        flex-wrap: wrap;
-        justify-content: center;
+    form{
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+    
     }
+
 }
 
 @keyframes explosive__move{
