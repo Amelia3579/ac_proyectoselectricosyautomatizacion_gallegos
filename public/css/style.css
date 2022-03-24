@@ -101,7 +101,7 @@ h2{
     display: grid;
     grid-template-columns: 180px 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    background:radial-gradient(circle, #5ffbf1, #52eff8, #54e3fc, #60d6fb, #71c8f5, #71c8f5, #71c8f5, #71c8f5, #60d6fb, #54e3fc, #52eff8, #5ffbf1);
+    background:linear-gradient(to top, #20c997, #5ed0a5, #84d7b4, #a5dec4, #c3e4d4, #c3e4d4, #c3e4d4, #c3e4d4, #a5dec4, #84d7b4, #5ed0a5, #20c997);
 }
 
 .main__disposicion__h2{
@@ -147,13 +147,12 @@ h2{
 }
 
 h3{
-    color: black;
+    color: grey;
     font-weight: 12.5em;
     font-size: 1.8em;
 }
 
 .empresa__a{
-    background-color: aquamarine;
     display: grid;
     grid-column: 2 / 3 ;
     grid-row: 1;
@@ -167,7 +166,6 @@ h3{
 }
 
 .empresa__b{
-    background-color: aquamarine;
     display: grid;
     grid-column: 3 / 4 ;
     grid-row: 1;
@@ -180,7 +178,6 @@ h3{
 }
 
 .empresa__c{
-    background-color: aquamarine;
     display: grid;
     grid-column: 2 / 5;
     grid-row: 2;
@@ -216,7 +213,7 @@ label{
 
 .btn{
     padding: .3rem;
-    background-color: aqua;
+    background-color: #20c997;
 }
 
 /*Footer*/
@@ -289,8 +286,7 @@ footer{
 
     50%{
         width: 200px;
-        color: whitesmoke;
-        background-color: grey;
+        background: linear-gradient(to top, #20c997, #5ed0a5, #84d7b4, #a5dec4, #c3e4d4, #c3e4d4, #c3e4d4, #c3e4d4, #a5dec4, #84d7b4, #5ed0a5, #20c997);;
     }
 
     75%{
