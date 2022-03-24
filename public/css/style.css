@@ -34,15 +34,14 @@ body{
     grid-template-columns: repeat (2, 1fr);
     grid-template-rows:  10vh 20vh 1fr 10vh;
 }   
-/*
-.fondo{ 
+#fondo{ 
     background-image: url(../img/incio.jpg);
     background-repeat: no-repeat;
-    background-size:contain;
+    background-size:cover;
     background-position: right;
-    background-attachment: fixed;*/
+    background-attachment: fixed;}
     /*background-color: grey; 
-}*/
+}
 
 /*Header*/
 header{
