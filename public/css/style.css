@@ -6,27 +6,21 @@
 }
 
 /*Globales*/
-
-
-
 a{
     color: grey;
     text-decoration:none;
 }
 
-
 ul{
     list-style-type: none;
     color: grey;
     font-size: 2em;
-    text-decoration:underline
 }
 
 /*Helpers*/
 .contenedor{
-    max-width: 1080px;
-    margin: 2rem 0 0 7rem;
-    padding: 1rem;
+    width: 100%;
+    padding:1rem;
 }
 
 /*Body*/
@@ -37,16 +31,14 @@ body{
     grid-template-rows:  10vh 20vh 1fr 10vh; 
     font-size: 62.5%;
     font-family: Arial, Helvetica, sans-serif;
+    color:grey;
 }   
 #fondo{ 
     background-image: url(../img/incio.jpg);
     background-repeat: no-repeat;
     background-size:cover;
-    background-position: right;
-    background-attachment: fixed;}
-    /*background-color: grey; 
+    background-attachment: fixed;
 }
-
 /*Header*/
 header{
     display: grid;
@@ -54,11 +46,9 @@ header{
     grid-row: 1 / 2;
     position: fixed;
     width: 100%;
-    background-color: grey;
-    padding: 1em 0;
-    
+    background-color: rgba(15, 15, 68, 0.979);
+    color: grey;
 }
-
 h1{
     background-color :rgba(15, 15, 68, 0.979);
     color: grey;
@@ -69,27 +59,22 @@ h1{
     display: flex;
     justify-content: center;
 } 
-
-.navbar{
+/* .navbar{
     background-color: rgba(15, 15, 68, 0.979);
     height: 20vh;
     display: flex;
     justify-content: space-around;
     align-items:flex-start;
 }
-
 .navbar .menu{
     display: flex;
     font-size: 1.8em;
     gap: 1.2rem;
 }
-
 .logo{
     width: 200px;
     height: 100px;
-}
-
-
+} */
 /*Main*/
 main{
     display: grid;
@@ -97,11 +82,11 @@ main{
     grid-row: 3;
     width: 100%;
 }
-
-
 h2{
     color: grey;
-    font-size: 1.1em;
+    font-weight: bold;
+    font-size: 1em;
+    background-color: rgba(15, 15, 68, 0.979);
 }
 .main__disposicion{
     display: grid;
@@ -109,7 +94,6 @@ h2{
     grid-template-rows: 1fr 1fr;
     background:linear-gradient(to top, #20c997, #5ed0a5, #84d7b4, #a5dec4, #c3e4d4, #c3e4d4, #c3e4d4, #c3e4d4, #a5dec4, #84d7b4, #5ed0a5, #20c997);
 }
-
 .main__disposicion__h2{
     font-weight: 37.5em;
     font-size: 2.4em;
@@ -122,7 +106,6 @@ h2{
     padding: 1.8rem;
 } 
 
-/*
 .index__a {
     display: grid;
     grid-column: 2;
@@ -135,7 +118,6 @@ h2{
     margin: 20px;
     background-color:rgb(241, 177, 156);
     animation: explosive__move infinite ease-out 7s;
-    
 }
 .index__b {
     display: grid;
@@ -149,15 +131,12 @@ h2{
     margin: 20px;
     background-color: rgb(241, 177, 156);
     animation: explosive__move infinite ease-in-out 7s;
-    
-}*/
-
+}
 h3{
     color: grey;
-    font-weight: 12.5em;
-    font-size: 1.8em;
+    font-weight:normal;
+    font-size: 2.5em;
 }
-
 .empresa__a{
     display: grid;
     grid-column: 2 / 3 ;
@@ -170,7 +149,6 @@ h3{
     padding: 1.2rem;
     margin: 0 .3rem;
 }
-
 .empresa__b{
     display: grid;
     grid-column: 3 / 4 ;
@@ -182,7 +160,6 @@ h3{
     font-size: 1.8em;
     padding: 1.2rem;
 }
-
 .empresa__c{
     display: grid;
     grid-column: 2 / 5;
@@ -195,14 +172,11 @@ h3{
     padding: 1.2rem;
     margin: .3rem 0 0.3rem .3rem;
 }
-
-
 ol{
     font-size: 1.8em;
     color: grey;
     margin: 1.8em;
 }
-
 form{
     display: grid;
     grid-column:  3 ;
@@ -211,19 +185,16 @@ form{
     width: 300px;
     margin: 2em 13em;
 }
-
 label{
     display: block;
     padding: .3rem;
 }
-
 .btn{
     padding: .3rem;
     background-color: #20c997;
 }
 
 /*Footer*/
-
 footer{
     background-color: rgba(15, 15, 68, 0.979);
     display: grid;
@@ -238,40 +209,31 @@ footer{
 }
 /*
 @media screen and (max-width: 768px) {
-
     .logo{
         display: flex;
         justify-content:center;
         justify-items:flex-start;
     }
-    
     header{
         padding: 1em 0;
-        
     }
-
     header .navbar{
         flex-wrap: wrap;
         justify-content: center;
         height: 100%;
     }
-
     header .navbar .menu{
         margin-top: 2rem;
     }
-
     .main__disposicion{
         display: flex;
         flex-direction: column;
         justify-items: center;
         margin-top:  2rem;
     }
-
     .main__disposicion__h2{
         margin-top:  1rem;
     }
-
-
     form{
         display: flex;
         flex-direction: column;
